@@ -1,0 +1,112 @@
+.navbar {
+  width: 100%;
+  display: grid;
+  align-items: center;
+  background-color: var(--green10);
+  padding: 0 ;
+}
+.navHead{
+  display: flex;
+  align-items: center;
+  justify-content:space-evenly;
+}
+.menuIcon{
+  color: black;
+  padding: 10px;
+}
+
+.logo {
+  display: flex;
+  font-size: 1.5rem;
+  color: black;
+  font-weight: bold;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+
+.navbar li {
+  margin-left: 2rem;
+
+}
+
+.navbar svg{
+    height: 24;
+    width: 24;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: black;
+}
+
+
+.navbar li:hover,
+.navbar li:active,
+.navbar li.focus {
+  color: rgb(254, 247, 247);
+}
+.searchBar{
+  width: 30rem;
+  height: 1.5rem;
+}
+
+.searchBar input{
+  width: 100%;
+  height: 100%;
+  font-size: 1.5rem;
+}
+
+
+/** 
+    Breakpoints:
+    ------------
+    sm: min-width: 640px; //small device
+    md: min-width: 768px; // medium device
+    lg: min-width: 1024px; // large device
+    xl: min-width: 1280px; // extra large device
+    2xl: min-width: 1536px; // 2 x extra large device
+  **/
+
+/** sm breakpoint **/
+@media (min-width: 640px) {
+  .navbar{
+    grid-template-columns:  1fr;
+    height:fit-content;
+  
+  }
+
+  
+}
+
+/** md breakpoint **/
+@media (min-width: 768px) {
+  .navbar{
+    grid-template-columns: 1fr 1fr;
+    height: fit-content;
+  }
+}
+
+/** lg breakpoint **/
+@media (min-width: 1024px) {
+  .navbar{
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    height: 15vh;
+  }
+}
+
+/** xl breakpoint **/
+@media (min-width: 1280px) {
+  .title2 {
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    height: 12vh;
+  }
+}
